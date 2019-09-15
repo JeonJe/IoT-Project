@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+        <meta content="" name="description">
+        <meta content="" name="author">
+
+        <title>Your Fresh Route</title>
+
+        <!-- Bootstrap core CSS -->
+        <link
+        href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/modern-business.css" rel="stylesheet">
+        
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    function CheckLoginState() {
+
+        var getUSN = localStorage.getItem('USN');
+        console.log(getUSN);
+        if (getUSN === null) {
+            var link = document.getElementById('link_1');
+            link.setAttribute('href', "/user/signin");
+            link.innerHTML = "Sign-In"
+
+            var link2 = document.getElementById('link_2');
+            link2.setAttribute('href', "/user/signup");
+            link2.innerHTML = "Sign-Up"
+
+        } else {
+            var link = document.getElementById('link_1');
+            link.setAttribute('href', "/user/index");
+            link.innerHTML = "User Page"
+        }
+    }
+ 
+    </script>
+
+    <body onload="CheckLoginState();">
+
+        <!-- Navigation -->
+        <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top"> -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light fixed-top" style="background-color: #84b899;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Team D
+                </a>
+                <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-toggle="collapse"
+                    type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" id="link_2" href=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="link_1" href=""></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+                <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+                    <li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+                    <li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <!-- Slide One - Set the background image for this slide in the line below -->
+                    <div class="carousel-item active"
+                        style="background-image: url('https://justwallpapers.files.wordpress.com/2012/11/autumn-colors.jpg')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Find your Fresh Route.</h3>
+                            <p>The data measured by the sensor tells you if your route is safe or not..</p>
+                        </div>
+                    </div>
+                    <!-- Slide Two - Set the background image for this slide in the line below -->
+                    <div class="carousel-item"
+                        style="background-image: url('https://www.foreverwallpapers.com/wp-content/uploads/2018/08/sky-1900x1080.jpg')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Find your Fresh Route.</h3>
+                            <p>The data measured by the sensor tells you if your route is safe or not..</p>
+                        </div>
+                    </div>
+                    <!-- Slide Three - Set the background image for this slide in the line below -->
+                    <div class="carousel-item"
+                        style="background-image: url('http://www.do-it-every-day.com/assets/running-1900x1080-60-338d6f68d36c77a66346ec5557d71fc6bddc76929ecdbb96cb9c721db07cb908.jpg')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Find your Fresh Route.</h3>
+                            <p>The data measured by the sensor tells you if your route is safe or not..</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button">
+                    <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" data-slide="next" href="#carouselExampleIndicators" role="button">
+                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <h1 class="my-4">We find your Fresh Route. </h1>
+
+            <!-- Marketing Icons Section -->
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 card bg-light mb-3">
+                        <h4 class="card-header ">When fresh air wants to drink </h4>
+                        <div class="card-body">
+                            <p class="card-text">Our application stores CO, NO2, O3, SO2, and PM2.5 in the database and recommends a pleasant path for you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 card text-white bg-success mb-3">
+                        <h4 class="card-header">When you want to know the your route air quality</h4>
+                        <div class="card-body">
+                            <p class="card-text"> 
+                            Our application can see AQI value and your route on the map at a glance.
+                            The results of your measurements are also charted.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 card text-white bg-info mb-3">
+                        <h4 class="card-header">When you want a new way</h4>
+                        <div class="card-body">
+                            <p class="card-text">We recommend fresh routes for new experiences</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <!-- Portfolio Section -->
+
+
+            <!-- Features Section -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Features</h2>
+                    <p>Our's application includes:</p>
+                    <ul>
+                        <li>
+                            <strong>Real-time air quality & heart rate data monitoring</strong>
+                        </li>
+                        <li>
+                            <strong>Historical air quality & heart rate data monitoring</strong>
+                        </li>
+                        <li>Sensor Movement Path Tracking</li>
+
+                    </ul>
+                    <p>The values measured by the sensor are stored in the our's database. We provide a service that
+                        allows users to obtain information about the air at a glance through the values in the stored
+                        database.
+                        It also provides air changes, heart rate changes and temperature changes from the past to the
+                        present.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid rounded" src="/realtime.png" alt="">
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+        </div>
+        <!-- /.container -->
+
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; Fresh Your Route 2019</p>
+            </div>
+            <!-- /.container -->
+        </footer>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+
+    </html>
